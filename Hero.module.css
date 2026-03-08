@@ -1,0 +1,90 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding-top: 100px;
+}
+
+.glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(223, 87, 188, 0.12) 0%, transparent 70%);
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.heroTagline {
+  font-family: var(--font-italic);
+  font-size: 1.8rem;
+  color: var(--rose);
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.heroTitle {
+  font-size: clamp(4rem, 10vw, 9rem);
+  margin-bottom: 2rem;
+}
+
+.sectorPills {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.pill {
+  padding: 10px 24px;
+  border-radius: 100px;
+  border: 1px solid rgba(245, 156, 169, 0.3);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--champagne);
+  background: rgba(255, 255, 255, 0.03);
+  transition: all 0.3s;
+}
+
+.pill:hover {
+  background: var(--fuchsia);
+  color: #fff;
+  border-color: var(--fuchsia);
+  transform: translateY(-2px);
+}
+
+.subText {
+  max-width: 600px;
+  font-size: 1.1rem;
+  color: #f59ca9;
+  line-height: 1.6;
+  margin: 0 auto 3rem auto;
+  text-align: center;
+}
+
+.btnMain {
+  padding: 20px 50px;
+  background: var(--fuchsia);
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1rem;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+  transition: all 0.3s;
+  display: inline-block;
+}
+
+.btnMain:hover {
+  background: var(--grape);
+  transform: scale(1.05);
+}
